@@ -3,19 +3,29 @@ let h = 600
 let circleEscape = 0
 let x,y,d,a,color1,color2,color3
 
+
 function setup()
 {
     createCanvas(w,h)
     background("pink")
 }
 
+
 function draw()
 {
-    dati(x,y,d,a,color1,color2,color3)
+    dati(x,y,d,a,color1,color2,color3) 
     circle(x,y,d)
     strokeWeight(1)
     fill(color1, color2, color3, a)
+    
+    console.log(circleEscape)
+    circleEscape ++
 
+    if(circleEscape == 1000) 
+    {
+        background("pink")
+        circleEscape = 0
+    }
 }
 
 function dati()
