@@ -1,8 +1,3 @@
-function setup()
-{
-    createCanvas(600,300)
-}
-function draw()
-{
-    background("white")
-}
+let w = 600
+let h = 300
+let c = 0
